@@ -1,12 +1,11 @@
 let fetch = require('node-fetch')
 let handler = async (m, { conn }) => {
-  let pepe = 'https://telegra.ph/file/2e2eb7d093fec08fd00d4.jpg'
+  let pepe = 'https://telegra.ph/file/6bc953ff1164374a542a4.jpg'
   let baper = await fetch(pepe).then(a => a.buffer())
 
-  let aine = '6289654360447@s.whatsapp.net'
-  let a = await conn.profilePictureUrl(conn.user.jid, 'image').catch((_) => "https://telegra.ph/file/24fa902ead26340f3df2c.png")
-  let b = await conn.profilePictureUrl(owner[0]+'@s.whatsapp.net', 'image').catch((_) => "https://telegra.ph/file/24fa902ead26340f3df2c.png")
-  let c = pickRandom([a, b])
+  let aine = '6285706735450@s.whatsapp.net'
+  let a = await conn.profilePictureUrl(conn.user.jid, 'image').catch((_) => "https://telegra.ph/file/6bc953ff1164374a542a4.jpg")
+  let b = await conn.profilePictureUrl(owner[0]+'@s.whatsapp.net', 'image').catch((_) => "https://telegra.ph/file/6bc953ff1164374a542a4.jpg"
   let d = await fetch(c).then(a => a.buffer())
   let prepare = await require('@adiwajshing/baileys').generateWAMessageFromContent(m.key.remoteJid,{listMessage:{
   title: `${await conn.getName(conn.user.jid)}`,
@@ -36,9 +35,9 @@ wa.me/${owner[0]}
   products:[{productId:'7487741964584083'}]}],
   headerImage: { productId: '7487741964584083',
   jpegThumbnail: baper },
-  businessOwnerJid: `6289654360447@s.whatsapp.net`
+  businessOwnerJid: `6285706735450@s.whatsapp.net`
   },
-  footerText: 'https://aiinne.github.io',
+  footerText: 'https://XziroID.github.io',
   }},{})
   conn.relayMessage(prepare.key.remoteJid,prepare.message,{messageId:prepare.key.id})
   const data = global.owner.filter(([id, isCreator]) => id && isCreator)
