@@ -21,6 +21,6 @@ let version /2.3.45
 consle= turu gaes
 node. Text 
 Spam text 
-@param  git
 @Param  git
-@param  Gitgenore.xc
+@Param  git
+@Param  Gitgenore.xc
